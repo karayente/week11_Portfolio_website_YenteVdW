@@ -1,0 +1,877 @@
+
+
+html    {
+    padding: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 0.3rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
+    background:
+    radial-gradient(white 5%, transparent 16%) 0 0,
+    radial-gradient(white 5%, transparent 16%) 8px 8px,
+    radial-gradient(#63c1e2 15%, transparent 20%) 0 1px,
+    radial-gradient(#63c1e2 15%, transparent 20%) 8px 9px;
+    background-color:#94d2e8;
+    background-size:16px 16px;
+    }
+a   {
+    text-decoration: none;
+}
+
+* {
+
+  box-sizing: border-box;
+}
+
+#back   {
+    position: fixed;
+    top: 1rem;
+    right: -4.2rem;
+    height: 3rem;
+    width: 8rem;
+    z-index: 100;
+}
+#back p     {
+    position: fixed;
+    top: 3rem;
+    right: 1.4rem;
+    color: white;
+    font-weight: bolder;
+    padding: 0.3rem;
+    border: 2px solid white;
+    background-color: rgba(255,255,255, 0.35);
+    z-index: 100;
+
+}
+#back p:hover    {
+    background-color: white;
+    color:#ed5a88;
+    border: 3px solid #ed5a88;
+}
+#pijl_terug     {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url(left.png);
+    background-size: contain;
+}
+embed   {
+    display: none;
+}
+input,textarea {
+      font: inherit;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      line-height: 2rem;}
+
+textarea {
+      height: 30rem;
+      resize: vertical;}
+
+input[type="radio"] {
+      margin-right: 1rem;}
+
+button {
+      box-sizing: border-box;
+      cursor: pointer;
+      border: 0;
+      padding: 1rem;
+      color: #fff;
+      border-radius: .5rem;
+      font-size: 2rem;
+      background-color: rgb(66, 134, 244, 0);}
+
+
+
+legend {
+      padding: 0 0 .7rem 0;
+      font-weight: 700;
+      font-size: 1.75rem;
+      margin-bottom: 1rem;}
+
+label {
+       cursor: pointer;}
+
+.fieldset-wrapper {
+       padding: 2rem 1rem 1rem 1rem;
+       margin-bottom: 2rem;
+       border: 0;
+       border-radius: 1rem;
+       background-color: white;
+   }
+
+.field-text label {
+       display: block;
+       font-size: 1.5rem;
+       margin-bottom: 1rem;}
+
+.field-text label, .field-text input,.field-text  {
+       width: 100%;
+       max-width: 80vw;
+       box-sizing: border-box;}
+.field-text textarea    {
+    width: 70vw;
+    height: 40vh;
+}
+
+.field-text input,.field-text textarea {
+       padding: .400rem .400rem .400rem;
+       border: 1px solid #ccc;
+       border-radius: 2rem;}
+
+ field-submit {
+       padding: 1em;}
+
+h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;}
+
+p { font-size: 1.5rem;}
+
+fieldset {
+    border: 0;
+}
+#form   {
+    margin-top: 2rem;
+}
+.tekstballon1   {
+      width: 170px;
+      height: 80px;
+      background-image: linear-gradient(to right, #f9e484, #f7d747);
+      position: relative;
+      border-radius: 10px;
+    }
+.tekstballon1:before {
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 22px solid transparent;
+	border-right-color: #f9e484;
+	border-left: 0;
+	margin-top: -22px;
+	margin-left: -22px;
+    }
+#titel  {
+    padding: 0.5rem;
+    padding-top: 1rem;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+#ballon1    {
+    margin-left: -16rem;
+    margin-top: -2rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    animation-name: invlieg1;
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes invlieg1 {
+    100%{
+        transform: translate(14.5rem,0);
+    }
+}
+
+.tekstballon2   {
+      width: 80vw;
+      height: 67vh;
+      background-image: linear-gradient(to right, #f9e484, #f7d747);
+      position: relative;
+      border-radius: 10px;
+    }
+.tekstballon2:before {
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 22px solid transparent;
+	border-right-color: #f9e484;
+	border-left: 0;
+	margin-top: -22px;
+	margin-left: -22px;
+    }
+    .tekstballon2 .fieldset-wrapper {
+        background-image: linear-gradient(to right, #f9e484, #f7d747);
+        color: white;
+    }
+    #ballon2    {
+        margin-bottom: 2rem;
+        animation-name: invlieg2;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        position: absolute;
+        top: 26vh;
+        left: -81vw;
+    }
+    @keyframes invlieg2 {
+        100%{
+            transform: translate(89vw,0);
+        }
+    }
+
+
+    .tekstballon3   {
+          width: 80vw;
+          height: 77vh;
+          background-image: linear-gradient(to right, #fc8ab0,  #fc6799);
+          position: relative;
+          border-radius: 10px;
+        }
+    .tekstballon3:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 22px solid transparent;
+        border-left-color:   #fc6799;
+        border-right: 0;
+        margin-top: -22px;
+        margin-right: -22px;
+        }
+        #ballon3    {
+            margin-bottom: 2rem;
+            animation-name: invlieg3;
+            animation-duration: 2s;
+            animation-delay: 1.6s;
+            animation-fill-mode: forwards;
+            position: absolute;
+            right: -30rem;
+            position: absolute;
+            top: 99vh;
+        }
+        @keyframes invlieg3 {
+            100%{
+                transform: translate(-105vw,0);
+            }
+        }
+
+        .tekstballon3 .fieldset-wrapper {
+            background-image: linear-gradient(to right, #fc8ab0,  #fc6799);
+            color: white;
+        }
+        .tekstballon4   {
+              width: 8rem;
+              height: 4rem;
+              background-image: linear-gradient(to right, #f9e484, #f7d747);
+              position: relative;
+              border-radius: 10px;
+            }
+        .tekstballon4:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border: 22px solid transparent;
+            border-right-color: #f9e484;
+            border-left: 0;
+            margin-top: -22px;
+            margin-left: -21px;
+            }
+            .tekstballon4 .fieldset-wrapper {
+                background-image: linear-gradient(to right, #f9e484, #f7d747);
+                color: white;
+                font-size: 2rem;
+            }
+            #ballon4   {
+                margin-bottom: 0.7rem;
+                animation-name: invlieg4;
+                animation-duration: 2s;
+                animation-delay: 2.5s;
+                animation-fill-mode: forwards;
+                position: absolute;
+                top: 178vh;
+                left: -10rem;
+            }
+            button:hover  {
+
+                color:#ed5a88;
+                font-weight: bolder;
+
+            }
+            @keyframes invlieg4 {
+                100%{
+                    transform: translate(39.7vw,0);
+                }
+            }
+@supports (grid-area: auto) {
+@media (min-width: 40rem) {
+
+    .tekstballon3   {
+          width: 80vw;
+          height: 78vh;
+          background-image: linear-gradient(to right, #fc8ab0,  #fc6799);
+          position: relative;
+          border-radius: 10px;
+        }
+    .tekstballon3:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 22px solid transparent;
+        border-left-color:   #fc6799;
+        border-right: 0;
+        margin-top: -22px;
+        margin-right: -21px;
+        }
+        #ballon3    {
+            margin-bottom: 2rem;
+            animation-name: invlieg3;
+            animation-duration: 2s;
+            animation-delay: 1.6s;
+            animation-fill-mode: forwards;
+            position: absolute;
+            right: -85rem;
+            position: absolute;
+            top: 102vh;
+        }
+        @keyframes invlieg3 {
+            100%{
+                transform: translate(-220vw,0);
+            }
+        }
+
+        .tekstballon3 .fieldset-wrapper {
+            background-image: linear-gradient(to right, #fc8ab0,  #fc6799);
+            color: white;
+        }
+        .tekstballon4   {
+              width: 8rem;
+              height: 4rem;
+              position: relative;
+              border-radius: 10px;
+            }
+        .tekstballon4:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border: 22px solid transparent;
+            border-right-color: #f9e484;
+            border-left: 0;
+            margin-top: -22px;
+            margin-left: -21px;
+            }
+
+            #ballon4   {
+                margin-bottom: 0.7rem;
+                animation-name: invlieg4;
+                animation-duration: 2s;
+                animation-delay: 2.5s;
+                animation-fill-mode: forwards;
+                position: absolute;
+                top: 183vh;
+                left: -10rem;
+            }
+            button:hover  {
+
+                color:#ed5a88;
+                font-weight: bolder;
+
+            }
+            @keyframes invlieg4 {
+                100%{
+                    transform: translate(32vw,0);
+                }
+            }
+        }
+
+@media (min-width: 60rem) {
+
+    input,textarea {
+          font: inherit;
+          font-size: 1.5rem;
+          margin-bottom: 1.5rem;
+          line-height: 2rem;}
+
+    textarea {
+          height: 30rem;
+          resize: vertical;}
+
+    input[type="radio"] {
+          margin-right: 1rem;}
+
+    button {
+          box-sizing: border-box;
+          cursor: pointer;
+          border: 0;
+          padding: 1rem;
+          color: #fff;
+          border-radius: .5rem;
+          font-size: 2rem;
+          background-color: rgb(66, 134, 244, 0);}
+
+
+
+    legend {
+          padding: 0 0 .7rem 0;
+          font-weight: 700;
+          font-size: 1.75rem;
+          margin-bottom: 1rem;}
+
+    label {
+           cursor: pointer;}
+
+    .fieldset-wrapper {
+           padding: 2rem 1rem 1rem 1rem;
+           margin-bottom: 2rem;
+           border: 0;
+           border-radius: 1rem;
+           background-color: white;
+       }
+
+    .field-text label {
+           display: block;
+           font-size: 1.5rem;
+           margin-bottom: 1rem;}
+
+    .field-text label, .field-text input,.field-text  {
+           width: 100%;
+           max-width: 80vw;
+           box-sizing: border-box;}
+    .field-text textarea    {
+        width: 70vw;
+        height: 40vh;
+    }
+
+    .field-text input,.field-text textarea {
+           padding: .400rem .400rem .400rem;
+           border: 1px solid #ccc;
+           border-radius: 2rem;}
+
+     field-submit {
+           padding: 1em;}
+
+    h1 {
+          font-size: 2rem;
+          margin-bottom: 1.5rem;
+          font-weight: 700;}
+
+    p { font-size: 1.5rem;}
+
+    fieldset {
+        border: 0;
+    }
+    #form   {
+        margin-top: 2rem;
+    }
+    .tekstballon1   {
+          width: 170px;
+          height: 80px;
+          position: relative;
+          border-radius: 10px;
+        }
+    .tekstballon1:before {
+        content: '';
+    	position: absolute;
+    	left: 0;
+    	top: 50%;
+    	width: 0;
+    	height: 0;
+    	border: 22px solid transparent;
+        border-right-color: #f9e484;
+    	border-left: 0;
+    	margin-top: -22px;
+    	margin-left: -22px;
+        }
+    #titel  {
+        padding: 0.5rem;
+        padding-top: 1rem;
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+    #ballon1    {
+        margin-left: -16rem;
+        margin-top: -2rem;
+        margin-bottom: 1.5rem;
+        color: white;
+        animation-name: invlieg1;
+        animation-duration: 2s;
+        animation-delay: 0.3s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes invlieg1 {
+        100%{
+            transform: translate(16rem,0);
+        }
+    }
+
+    .tekstballon2   {
+          width: 70vw;
+          height: 70vh;;
+          position: relative;
+          border-radius: 10px;
+        }
+    .tekstballon2:before {
+        content: '';
+    	position: absolute;
+    	left: 0;
+    	top: 50%;
+    	width: 0;
+    	height: 0;
+    	border: 22px solid transparent;
+        border-right-color: #f9e484;
+    	border-left: 0;
+    	margin-top: -22px;
+    	margin-left: -21px;
+        }
+
+        #ballon2    {
+            margin-bottom: 2rem;
+            animation-name: invlieg2;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+            position: absolute;
+            top: 26vh;
+            left: -81vw;
+        }
+        @keyframes invlieg2 {
+            100%{
+                transform: translate(85.5vw,0);
+            }
+        }
+
+
+        .tekstballon3   {
+              width: 80vw;
+              height: 78vh;
+              background-image: linear-gradient(to right, #fc8ab0,  #fc6799);
+              position: relative;
+              border-radius: 10px;
+            }
+        .tekstballon3:before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border: 22px solid transparent;
+            border-left-color:   #fc6799;
+            border-right: 0;
+            margin-top: -22px;
+            margin-right: -21px;
+            }
+            #ballon3    {
+                margin-bottom: 2rem;
+                animation-name: invlieg3;
+                animation-duration: 2s;
+                animation-delay: 1.6s;
+                animation-fill-mode: forwards;
+                position: absolute;
+                right: -85rem;
+                position: absolute;
+                top: 102vh;
+            }
+            @keyframes invlieg3 {
+                100%{
+                    transform: translate(-143vw,0);
+                }
+            }
+
+            .tekstballon3 .fieldset-wrapper {
+                background-image: linear-gradient(to right, #fc8ab0,  #fc6799);
+                color: white;
+            }
+            .tekstballon4   {
+                  width: 8rem;
+                  height: 4rem;
+                  position: relative;
+                  border-radius: 10px;
+                }
+            .tekstballon4:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 0;
+                height: 0;
+                border: 22px solid transparent;
+                border-right-color: #f9e484;
+                border-left: 0;
+                margin-top: -22px;
+                margin-left: -21px;
+                }
+
+                #ballon4   {
+                    margin-bottom: 0.7rem;
+                    animation-name: invlieg4;
+                    animation-duration: 2s;
+                    animation-delay: 2.5s;
+                    animation-fill-mode: forwards;
+                    position: absolute;
+                    top: 183vh;
+                    left: -10rem;
+                }
+                button:hover  {
+
+                    color:#ed5a88;
+                    font-weight: bolder;
+
+                }
+                @keyframes invlieg4 {
+                    100%{
+                        transform: translate(20vw,0);
+                    }
+                }
+
+	    }
+@media (min-width: 80rem) {
+
+    input,textarea {
+          font: inherit;
+          font-size: 1.5rem;
+          margin-bottom: 1.5rem;
+          line-height: 2rem;}
+
+    textarea {
+          height: 30rem;
+          resize: vertical;}
+
+    input[type="radio"] {
+          margin-right: 1rem;}
+
+    button {
+          box-sizing: border-box;
+          cursor: pointer;
+          border: 0;
+          padding: 1rem;
+          color: #fff;
+          border-radius: .5rem;
+          font-size: 2rem;
+          background-color: rgb(66, 134, 244, 0);}
+
+
+
+    legend {
+          padding: 0 0 .7rem 0;
+          font-weight: 700;
+          font-size: 1.75rem;
+          margin-bottom: 1rem;}
+
+    label {
+           cursor: pointer;}
+
+    .fieldset-wrapper {
+           padding: 2rem 1rem 1rem 1rem;
+           margin-bottom: 2rem;
+           border: 0;
+           border-radius: 1rem;
+           background-color: white;
+       }
+
+    .field-text label {
+           display: block;
+           font-size: 1.5rem;
+           margin-bottom: 1rem;}
+
+    .field-text label, .field-text input,.field-text  {
+           width: 100%;
+           max-width: 80vw;
+           box-sizing: border-box;}
+    .field-text textarea    {
+        width: 70vw;
+        height: 40vh;
+    }
+
+    .field-text input,.field-text textarea {
+           padding: .400rem .400rem .400rem;
+           border: 1px solid #ccc;
+           border-radius: 2rem;}
+
+     field-submit {
+           padding: 1em;}
+
+    h1 {
+          font-size: 2rem;
+          margin-bottom: 1.5rem;
+          font-weight: 700;}
+
+    p { font-size: 1.5rem;}
+
+    fieldset {
+        border: 0;
+    }
+    #form   {
+        margin-top: 2rem;
+    }
+    .tekstballon1   {
+          width: 170px;
+          height: 80px;
+          position: relative;
+          border-radius: 10px;
+        }
+    .tekstballon1:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 22px solid transparent;
+        border-right-color: #f9e484;
+        border-left: 0;
+        margin-top: -22px;
+        margin-left: -22px;
+        }
+    #titel  {
+        padding: 0.5rem;
+        padding-top: 1rem;
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+    #ballon1    {
+        margin-left: -16rem;
+        margin-top: -2rem;
+        margin-bottom: 1.5rem;
+        color: white;
+        animation-name: invlieg1;
+        animation-duration: 2s;
+        animation-delay: 0.3s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes invlieg1 {
+        100%{
+            transform: translate(16rem,0);
+        }
+    }
+
+    .tekstballon2   {
+          width: 80vw;
+          height: 67vh;
+          position: relative;
+          border-radius: 10px;
+        }
+    .tekstballon2:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 22px solid transparent;
+        border-right-color: #f9e484;
+        border-left: 0;
+        margin-top: -22px;
+        margin-left: -22px;
+        }
+
+        #ballon2    {
+            margin-bottom: 2rem;
+            animation-name: invlieg2;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+            position: absolute;
+            top: 26vh;
+            left: -81vw;
+        }
+        @keyframes invlieg2 {
+            100%{
+                transform: translate(85.5vw,0);
+            }
+        }
+
+
+        .tekstballon3   {
+              width: 80vw;
+              height: 77vh;
+              background-image: linear-gradient(to right, #fc8ab0,  #fc6799);
+              position: relative;
+              border-radius: 10px;
+            }
+        .tekstballon3:before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border: 22px solid transparent;
+            border-left-color:   #fc6799;
+            border-right: 0;
+            margin-top: -22px;
+            margin-right: -22px;
+            }
+            #ballon3    {
+                margin-bottom: 2rem;
+                animation-name: invlieg3;
+                animation-duration: 2s;
+                animation-delay: 1.6s;
+                animation-fill-mode: forwards;
+                position: absolute;
+                right: -85rem;
+                position: absolute;
+                top: 99vh;
+            }
+            @keyframes invlieg3 {
+                100%{
+                    transform: translate(-105vw,0);
+                }
+            }
+
+            .tekstballon3 .fieldset-wrapper {
+                background-image: linear-gradient(to right, #fc8ab0,  #fc6799);
+                color: white;
+            }
+            .tekstballon4   {
+                  width: 8rem;
+                  height: 4rem;
+                  position: relative;
+                  border-radius: 10px;
+                }
+            .tekstballon4:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 0;
+                height: 0;
+                border: 22px solid transparent;
+                border-right-color: #f9e484;
+                border-left: 0;
+                margin-top: -22px;
+                margin-left: -22px;
+                }
+
+                #ballon4   {
+                    margin-bottom: 2rem;
+                    animation-name: invlieg4;
+                    animation-duration: 2s;
+                    animation-delay: 2.5s;
+                    animation-fill-mode: forwards;
+                    position: absolute;
+                    top: 180vh;
+                    left: -10rem;
+                }
+                button:hover  {
+
+                    color:#ed5a88;
+                    font-weight: bolder;
+
+                }
+                @keyframes invlieg4 {
+                    100%{
+                        transform: translate(18vw,0);
+                    }
+                }
+
+    }
+}

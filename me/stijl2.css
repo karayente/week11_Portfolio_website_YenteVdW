@@ -1,0 +1,753 @@
+
+
+html    {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
+    background:
+    radial-gradient(#f25c73 10%, transparent 16%) 0 0,
+    radial-gradient(#f25c73 10%, transparent 16%) 8px 8px,
+    radial-gradient(#fc163a 15%, transparent 20%) 0 1px,
+    radial-gradient(#fc163a 15%, transparent 20%) 8px 9px;
+    background-color:#f2b8c1;
+    background-size:16px 16px;
+    }
+a   {
+    text-decoration: none;
+}
+
+* {
+
+  box-sizing: border-box;
+}
+#messenger  {
+    height: 0rem;
+    width: 0rem;
+}
+.infoMe {
+    position: absolute;
+    top: 2.5rem;
+    right: 0.5rem;
+    width: 40vw;
+    height: 48vw;
+
+}
+
+#blue {
+    color: #8acfe2;
+    font-weight: bolder;
+    display: inline;
+}
+#pink {
+    color: #ed6194;
+    font-weight: bolder;
+    display: inline;
+}
+#yel {
+    color: #f7cf4c;
+    font-weight: bolder;
+    display: inline;
+}
+.container  {
+    width: 20rem;
+    height: 20rem;
+    margin-top: 3.5rem;
+}
+.donut-chart {
+  position: relative;
+	width: 200px;
+  height: 200px;
+	margin: 0 auto 2rem;
+	border-radius: 100%
+ }
+p.center {
+  background: white;
+  position: absolute;
+  text-align: center;
+font-size: 28px;
+  top:0;left:0;bottom:0;right:0;
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  border-radius: 50%;
+  line-height: 35px;
+  padding: 15% 0 0;
+}
+
+
+.portion-block {
+    border-radius: 50%;
+    clip: rect(0px, 200px, 200px, 100px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+.circle {
+    border-radius: 50%;
+    clip: rect(0px, 100px, 200px, 0px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.5rem;
+  }
+
+
+#part1 {
+    transform: rotate(0deg);
+  }
+
+	#part1 .circle {
+		background-color: #8acfe2;
+		/*transform: rotate(76deg);*/
+		animation: first 2s 1 forwards;
+        animation-delay: 3s;
+	  }
+
+
+#part2 {
+    transform: rotate(100deg);
+  }
+#part2 .circle {
+    background-color: #ed6194;
+    animation: second 2s 1 forwards 1s;
+    animation-delay: 4.5s;
+  }
+#part3 {
+    transform: rotate(250deg);
+}
+	#part3 .circle {
+		background-color: #f7cf4c;
+		animation: third 2s 1 forwards 2s;
+        animation-delay: 6s;
+	}
+
+
+.tekstballon1   {
+      width: 170px;
+      height: 80px;
+      background-image: linear-gradient(to right, #f9e484, #f7d747);
+      position: relative;
+      border-radius: 10px;
+    }
+.tekstballon1:before {
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 22px solid transparent;
+	border-right-color: #f9e484;
+	border-left: 0;
+	margin-top: -22px;
+	margin-left: -22px;
+    }
+#titel  {
+    padding: 0.5rem;
+    padding-top: 1.1rem;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+#ballon1    {
+    margin-left: -13rem;
+    margin-top: -1rem;
+    color: white;
+    animation-name: invlieg1;
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.tekstballon2   {
+      width: 290px;
+      height: 80px;
+      background-image: linear-gradient(to right, #a0c1f7, #5baee5);
+      position: relative;
+      border-radius: 10px;
+    }
+.tekstballon2:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 22px solid transparent;
+    border-left-color:  #5baee5;
+    border-right: 0;
+    margin-top: -22px;
+    margin-right: -22px;
+    }
+#text1  {
+    padding: 0.7rem;
+}
+#ballon2    {
+    margin-left: 35rem;
+    margin-top: 1.5rem;
+    color: white;
+    animation-name: invlieg2;
+    animation-duration: 2.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+.tekstballon3   {
+      width: 370px;
+      height: 80px;
+      background-image: linear-gradient(to right, #a0c1f7, #5baee5);
+      position: relative;
+      border-radius: 10px;
+    }
+.tekstballon3:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 22px solid transparent;
+    border-left-color:  #5baee5;
+    border-right: 0;
+    margin-top: -22px;
+    margin-right: -22px;
+    }
+#text3 {
+    padding: 0.7rem;
+
+}
+#ballon3    {
+    margin-left: 35rem;
+    margin-top: 1rem;
+    color: white;
+    animation-name: invlieg3;
+    animation-duration: 2.5s;
+    animation-delay: 2.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes invlieg1 {
+    100%{
+        transform: translate(15rem,0);
+    }
+}
+
+@keyframes invlieg2 {
+    100%{
+        transform: translate(-26rem,0);
+    }
+}
+@keyframes invlieg3 {
+    100%{
+        transform: translate(-31rem,0);
+    }
+}
+
+@keyframes first {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(100deg);}
+}
+
+@keyframes second {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(150deg);}
+}
+
+@keyframes third {
+    0%{transform: rotate(0deg);}
+    100% {transform: rotate(111deg);}
+}
+#video {
+
+
+    position: absolute;
+    top: 2.5rem;
+    left: 3rem;
+}
+#myVideo  {
+    width: 11.5rem;
+
+}
+#doodle {
+    width: 30rem;
+    height: 15rem;
+    background-image: url(doodle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0rem;
+    top:0rem;
+}
+#kader  {
+
+    width: 16rem;
+    height: 20rem;
+    position: relative;
+}
+#kader img  {
+    width: 17.3rem;
+    height: 17.9rem;
+}
+.kaderrond  {
+    position: absolute;
+    right: 4rem;
+    top: 0.5rem;
+}
+#back   {
+    position: fixed;
+    top: 1rem;
+    right: -4.2rem;
+    height: 3rem;
+    width: 8rem;
+    z-index: 100;
+}
+#back p     {
+    position: fixed;
+    top: 3rem;
+    right: 1.4rem;
+    color: white;
+    font-weight: bolder;
+    padding: 0.3rem;
+    border: 2px solid white;
+    background-color: rgba(255,255,255, 0.35);
+
+}
+#back p:hover    {
+    background-color: white;
+    color:#ed5a88;
+    border: 3px solid #ed5a88;
+}
+#pijl_terug     {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url(left.png);
+    background-size: contain;
+}
+
+.part1  {
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    right: 100vw;
+    top: 57vh;
+    background-color: white;
+
+}
+.part2  {
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    left: 100vw;
+    top: 112vh;
+    background-color: white;
+
+}
+.part2 p    {
+    display: none;
+}
+.extrame, .gallery   {
+    display: none;
+}
+@supports (grid-area: auto) {
+@media (min-width: 40rem) {
+
+        .tekstballon2   {
+              width: 470px;
+              height: 110px;
+              font-size: 1.5rem;
+              padding-left: 0.7rem;
+              background-image: linear-gradient(to right, #a0c1f7, #5baee5);
+              position: relative;
+              border-radius: 10px;
+            }
+        .tekstballon2:before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border: 22px solid transparent;
+            border-left-color:  #5baee5;
+            border-right: 0;
+            margin-top: -22px;
+            margin-right: -22px;
+            }
+        #text1  {
+            padding: 0.7rem;
+        }
+        #ballon2    {
+            margin-left: 42rem;
+            margin-top: 1.5rem;
+            color: white;
+            animation-name: invlieg2;
+            animation-duration: 2.5s;
+            animation-delay: 1.5s;
+            animation-fill-mode: forwards;
+        }
+        .tekstballon3   {
+            width: 520px;
+            height: 110px;
+            font-size: 1.5rem;
+            padding-left: 0.7rem;
+              background-image: linear-gradient(to right, #a0c1f7, #5baee5);
+              position: relative;
+              border-radius: 10px;
+            }
+        .tekstballon3:before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border: 22px solid transparent;
+            border-left-color:  #5baee5;
+            border-right: 0;
+            margin-top: -22px;
+            margin-right: -22px;
+            }
+        #text3 {
+            padding: 0.7rem;
+
+        }
+
+        #ballon3    {
+            margin-left: 43rem;
+            margin-top: 1rem;
+            color: white;
+            animation-name: invlieg3;
+            animation-duration: 2.5s;
+            animation-delay: 2.3s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes invlieg1 {
+            100%{
+                transform: translate(15rem,0);
+            }
+        }
+
+        @keyframes invlieg2 {
+            100%{
+                transform: translate(-33rem,0);
+            }
+        }
+        @keyframes invlieg3 {
+            100%{
+                transform: translate(-37rem,0);
+            }
+        }
+        .part1  {
+            width: 100vw;
+            height: 50vh;
+            position: absolute;
+            right: 100vw;
+            top: 70vh;
+            background-color: white;
+
+        }
+        .part2  {
+            width: 100vw;
+            height: 50vh;
+            position: absolute;
+            left: 100vw;
+            top: 128vh;
+            background-color: white;
+
+        }
+        .container  {
+            width: 20rem;
+            height: 20rem;
+            margin-top: 3.5rem;
+            margin-left: 2rem;
+        }
+
+        #doodle {
+            width: 30rem;
+            height: 15rem;
+            background-image: url(doodle.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 8rem;
+            top:0rem;
+        }
+        .part2 p {
+            display: flex;
+            position: absolute;
+            top: 7.5rem;
+            left: 3rem;
+            width: 15rem;
+            font-size: 1.5rem;
+            font-weight: bolder;
+            line-height: 2.5rem;
+            color: #3ea2e0;
+        }
+        .kaderrond  {
+            position: absolute;
+            right: 6rem;
+            top: 0.5rem;
+        }
+
+        }
+
+@media (min-width: 60rem) {
+
+
+    #ballon2    {
+        margin-left: 62rem;
+        margin-top: 1.5rem;
+        color: white;
+        animation-name: invlieg2;
+        animation-duration: 2.5s;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+    }
+    #ballon3    {
+        margin-left: 62rem;
+        margin-top: 1rem;
+        color: white;
+        animation-name: invlieg3;
+        animation-duration: 2.5s;
+        animation-delay: 2.3s;
+        animation-fill-mode: forwards;
+    }
+    .tekstballon2   {
+          width: 520px;
+          height: 100px;
+          font-size: 1.5rem;
+          padding-left: 0.7rem;
+          background-image: linear-gradient(to right, #a0c1f7, #5baee5);
+          position: relative;
+          border-radius: 10px;
+        }
+
+    .tekstballon3   {
+        width: 580px;
+        height: 100px;
+        font-size: 1.5rem;
+        padding-left: 0.7rem;
+        padding-top: 0rem;
+          background-image: linear-gradient(to right, #a0c1f7, #5baee5);
+          position: relative;
+          border-radius: 10px;
+        }
+        @keyframes invlieg1 {
+            100%{
+                transform: translate(18rem,0);
+            }
+        }
+
+        @keyframes invlieg2 {
+            100%{
+                transform: translate(-41rem,0);
+            }
+        }
+        @keyframes invlieg3 {
+            100%{
+                transform: translate(-44.5rem,0);
+            }
+        }
+        .part1  {
+            width: 70vw;
+            height: 50vh;
+            position: absolute;
+            right: 100vw;
+            top: 70vh;
+            background-color: white;
+
+        }
+        .part2  {
+            width: 70vw;
+            height: 50vh;
+            position: absolute;
+            left: 100vw;
+            top: 128vh;
+            background-color: white;
+
+        }
+        .infoMe {
+            position: absolute;
+            top: 2.5rem;
+            right: -4rem;
+            width: 40vw;
+            height: 48vw;
+
+        }
+        .extrame  {
+            display: inline;
+            width: 99vw;
+            height: 65vh;
+            position: absolute;
+            right: 200vw;
+            top: 186vh;
+            background-color: white;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            padding-top: 1rem;
+        }
+        .gallery    {
+            display: inline;
+
+
+        }
+        .gallery p{
+            font-weight: bolder;
+            font-size: 2rem;
+            padding: 0.3rem;
+            border: 2px solid white;
+            background-color: rgba(255,255,255, 0.35);
+            color: white;
+            width: 14rem;
+            height: 4rem;
+            padding-left: 0.9rem;
+            position: absolute;
+            top: 253vh;
+            left: 40%;
+            margin-bottom: 2rem;
+        }
+        .gallery p:hover    {
+            background-color: white;
+            color:#ed5a88;
+            border: 3px solid #ed5a88;
+        }
+	    }
+@media (min-width: 80rem) {
+
+    #doodle {
+        width: 30rem;
+        height: 15rem;
+        background-image: url(doodle.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 24rem;
+        top:0rem;
+    }
+    .part2 p {
+        display: flex;
+        position: absolute;
+        top: 8rem;
+        left: 12rem;
+        width: 15rem;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        line-height: 2.5rem;
+        color: #3ea2e0;
+    }
+    .extrame  {
+        display: inline;
+        width: 99vw;
+        height: 73vh;
+        position: absolute;
+        right: 200vw;
+        top: 186vh;
+        background-color: white;
+        margin-bottom: 3rem;
+        padding: 2rem;
+        padding-top: 1rem;
+    }
+    .extrame p  {
+        width: 50vw;
+        padding-left: 1rem;
+    }
+
+    .extrame h2  {
+        padding-left: 1rem;
+    }
+    .gallery p{
+        font-weight: bolder;
+        font-size: 2rem;
+        padding: 0.3rem;
+        border: 2px solid white;
+        background-color: rgba(255,255,255, 0.35);
+        color: white;
+        width: 14rem;
+        height: 4rem;
+        padding-left: 0.9rem;
+        position: absolute;
+        top: 260vh;
+        left: 43%;
+        margin-bottom: 2rem;
+    }
+    .yente{
+        height: 73vh;
+        width: 40vw;
+        background-image: url(yente.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        position: absolute;
+        right: 0rem;
+        top: 0rem;
+    }
+    .yente2{
+        height: 73vh;
+        width: 40vw;
+        background-image: url(scrabbles.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        position: absolute;
+        right: 2.5rem;
+        top: 0rem;
+        z-index: 100;
+        mix-blend-mode: color;
+
+    }
+    #ballon2    {
+        margin-left: 85rem;
+        margin-top: 1.5rem;
+        color: white;
+        animation-name: invlieg2;
+        animation-duration: 2.5s;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+    }
+    #ballon3    {
+        margin-left: 90rem;
+        margin-top: 1rem;
+        color: white;
+        animation-name: invlieg3;
+        animation-duration: 2.5s;
+        animation-delay: 2.3s;
+        animation-fill-mode: forwards;
+    }
+    .tekstballon2   {
+          width: 800px;
+          height: 100px;
+          font-size: 1.5rem;
+          padding-left: 0.7rem;
+          background-image: linear-gradient(to right, #a0c1f7, #5baee5);
+          position: relative;
+          border-radius: 10px;
+        }
+
+    .tekstballon3   {
+        width: 950px;
+        height: 100px;
+        font-size: 1.5rem;
+        padding-left: 0.7rem;
+        padding-top: 0rem;
+          background-image: linear-gradient(to right, #a0c1f7, #5baee5);
+          position: relative;
+          border-radius: 10px;
+        }
+        @keyframes invlieg1 {
+            100%{
+                transform: translate(20rem,0);
+            }
+        }
+
+        @keyframes invlieg2 {
+            100%{
+                transform: translate(-60rem,0);
+            }
+        }
+        @keyframes invlieg3 {
+            100%{
+                transform: translate(-74rem,0);
+            }
+        }
+    }
+}

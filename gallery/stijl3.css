@@ -1,0 +1,737 @@
+
+
+html    {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
+    background:
+    radial-gradient(white 5%, transparent 16%) 0 0,
+    radial-gradient(white 5%, transparent 16%) 8px 8px,
+    radial-gradient(#f79c00 15%, transparent 20%) 0 1px,
+    radial-gradient(#f79c00 15%, transparent 20%) 8px 9px;
+    background-color:#ffdc77;
+    background-size:16px 16px;
+    }
+a   {
+    text-decoration: none;
+}
+
+* {
+
+  box-sizing: border-box;
+}
+embed   {
+    display: none;
+}
+#back   {
+    position: fixed;
+    top: 1rem;
+    right: -4.2rem;
+    height: 3rem;
+    width: 8rem;
+    z-index: 100;
+}
+#back p     {
+    position: fixed;
+    top: 3rem;
+    right: 1.4rem;
+    color: white;
+    font-weight: bolder;
+    padding: 0.3rem;
+    border: 2px solid white;
+    background-color: rgba(255,255,255, 0.35);
+
+}
+#back p:hover    {
+    background-color: white;
+    color:#ed5a88;
+    border: 3px solid #ed5a88;
+}
+#pijl_terug     {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url(left.png);
+    background-size: contain;
+}
+.infoMe {
+    width: 60vw;
+    height: 48vw;
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+    z-index: 20;
+
+}
+.vierkant1  {
+    width: 35vw;
+    height: 36vh;
+    background-color: rgb(155, 198, 242, 0.7);
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 5;
+    animation: vier1 7s infinite forwards;
+}
+@keyframes vier1 {
+    0%{
+        transform: translate(1rem, 0.5rem);
+    }
+    25%{
+        transform: translate(-1rem, 0rem);
+    }
+    50%{
+        transform: translate(0rem, 0.5rem);
+    }
+    75%{
+        transform: translate(0rem, 1rem);
+    }
+    100%{
+        transform: translate(1rem, 0.5rem);
+    }
+
+}
+.vierkant2  {
+    width: 45vw;
+    height: 32vh;
+    background-color: rgb(237, 139, 188, 0.7);
+    position: absolute;
+    top: 4.5rem;
+    left: 8rem;
+    z-index: 10;
+    mix-blend-mode: color-burn;
+    animation: vier2 8s infinite forwards;
+
+
+}
+@keyframes vier2 {
+    0%{
+        transform: translate(0rem, 0.5rem);
+    }
+    25%{
+        transform: translate(0rem, -1rem);
+    }
+    50%{
+        transform: translate(0.5rem, 0rem);
+    }
+    75%{
+        transform: translate(-0.5rem, 1rem);
+    }
+    100%{
+        transform: translate(0rem, 0.5rem);
+    }
+
+}
+.part1  {
+    width: 60vw;
+    height: 10vh;
+    position: absolute;
+    right: 100vw;
+    top: 55vh;
+    background-color: white;
+    border-radius: 1rem;
+}
+.part1 p {
+    float: right;
+    padding: 0.5rem;
+    padding-right: 1rem;
+}
+#scroll1-binnen {
+    width: 414vw;
+    height: 35vh;
+    background-color: #99b6c6;
+    position: absolute;
+    left: 0vw;
+    top: 70vh;
+}
+#pijl1   {
+    position: absolute;
+    top: 85vh;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-image: url(right.png);
+    background-size: contain;
+}
+#pijl2   {
+    position: absolute;
+    top: 85vh;
+    left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-image: url(left.png);
+    background-size: contain;
+}
+ .first {
+    width: 13rem;
+    height: 12rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: 0.7rem;
+}
+.first:nth-child(1) {
+    background-image: url(001.jpg);
+    margin-left: 1rem;
+}
+.first:nth-child(2) {
+    background-image: url(003.jpg);
+}
+.first:nth-child(3) {
+    background-image: url(004.jpg);
+}
+.first:nth-child(4) {
+    background-image: url(005.png);
+    background-position: top;
+}
+.first:nth-child(5) {
+    background-image: url(006.jpg);
+}
+.first:nth-child(6) {
+    background-image: url(007.jpg);
+}
+.first:nth-child(7) {
+    background-image: url(008.jpg);
+}
+.first:nth-child(8) {
+    background-image: url(009.png);
+}
+.first:nth-child(9) {
+    background-image: url(010.jpg);
+}
+
+.part2  {
+    width: 60vw;
+    height: 10vh;
+    position: absolute;
+    right: 100vw;
+    top: 111vh;
+    background-color: white;
+    border-radius: 1rem;
+}
+.part2 p {
+    float: right;
+    padding: 0.5rem;
+    padding-right: 1rem;
+}
+#scroll2-binnen {
+    width: 380vw;
+    height: 35vh;
+    background-color: #99b6c6;
+    position: absolute;
+    left: 0vw;
+    top: 127vh;
+    margin-bottom: 4rem;
+}
+#pijl3   {
+    position: absolute;
+    top: 143vh;
+    left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-image: url(left.png);
+    background-size: contain;
+}
+#pijl4   {
+    position: absolute;
+    top: 143vh;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-image: url(right.png);
+    background-size: contain;
+}
+.second {
+   width: 25rem;
+   height: 12rem;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   display: inline-block;
+   margin-right: 3rem;
+   margin-top: 0.7rem;
+}
+#twee_1 {
+   background-image: url(web1.PNG);
+   margin-left: 2.5rem;
+}
+#twee_2 {
+   background-image: url(web_2.PNG);
+}
+#twee_3 {
+   background-image: url(web3.PNG);
+}
+#twee_4 {
+   background-image: url(web_4.PNG);
+
+}
+.contact   {
+    display: none;
+}
+
+@supports (grid-area: auto) {
+@media (min-width: 40rem) {
+    .infoMe p {
+        font-size: 1.2rem;
+    }
+    .vierkant1  {
+        width: 40vw;
+        height: 39vh;
+        background-color: rgb(155, 198, 242, 0.7);
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        z-index: 5;
+        animation: vier1 7s infinite forwards;
+    }
+
+    .vierkant2  {
+        width: 50vw;
+        height: 37vh;
+        background-color: rgb(237, 139, 188, 0.7);
+        position: absolute;
+        top: 4.5rem;
+        left: 8rem;
+        z-index: 10;
+        mix-blend-mode: color-burn;
+        animation: vier2 8s infinite forwards;
+
+
+    }
+    .part1  {
+        width: 60vw;
+        height: 13vh;
+        position: absolute;
+        right: 100vw;
+        top: 55vh;
+        background-color: white;
+        border-radius: 1rem;
+    }
+    .part1 p {
+        float: right;
+        padding: 0.5rem;
+        padding-right: 1rem;
+        font-size: 1.3rem;
+    }
+    .part2  {
+        width: 60vw;
+        height: 13vh;
+        position: absolute;
+        right: 100vw;
+        top: 111vh;
+        background-color: white;
+        border-radius: 1rem;
+    }
+    .part2 p {
+        float: right;
+        padding: 0.5rem;
+        padding-right: 1rem;
+        font-size: 1.3rem;
+    }
+
+
+        }
+
+@media (min-width: 60rem) {
+    .second:hover{
+        filter: blur(1px);
+    }
+    .contact   {
+        display: inline;
+    }
+    .contact p{
+        font-weight: bolder;
+        font-size: 2rem;
+        padding: 0.3rem;
+        border: 2px solid white;
+        background-color: rgba(255,255,255, 0.35);
+        color: white;
+        width: 9rem;
+        height: 4rem;
+        padding-left: 0.9rem;
+        position: absolute;
+        top: 163vh;
+        left: 45%;
+        margin-bottom: 2rem;
+    }
+    .contact p:hover    {
+        background-color: white;
+        color:#ed5a88;
+        border: 3px solid #ed5a88;
+    }
+    .part1  {
+        width: 60vw;
+        height: 13vh;
+        position: absolute;
+        right: 120vw;
+        top: 55vh;
+        background-color: white;
+        border-radius: 1rem;
+    }
+    .part1 p {
+        float: right;
+        padding: 0.5rem;
+        padding-right: 1rem;
+        font-size: 1.3rem;
+    }
+    .part2  {
+        width: 60vw;
+        height: 13vh;
+        position: absolute;
+        right: 120vw;
+        top: 111vh;
+        background-color: white;
+        border-radius: 1rem;
+    }
+    .part2 p {
+        float: right;
+        padding: 0.5rem;
+        padding-right: 1rem;
+        font-size: 1.3rem;
+    }
+
+
+	    }
+@media (min-width: 80rem) {
+
+        .contact p{
+            font-weight: bolder;
+            font-size: 2rem;
+            padding: 0.3rem;
+            border: 2px solid white;
+            background-color: rgba(255,255,255, 0.35);
+            color: white;
+            width: 9rem;
+            height: 4rem;
+            padding-left: 0.9rem;
+            position: absolute;
+            top: 194vh;
+            left: 45%;
+            margin-bottom: 2rem;
+        }
+        .part1  {
+            width: 50vw;
+            height: 13vh;
+            position: absolute;
+            right: 120vw;
+            top: 55vh;
+            background-color: white;
+            border-radius: 1rem;
+        }
+        .part1 p {
+            float: right;
+            padding: 0.5rem;
+            padding-right: 2rem;
+            font-size: 1.3rem;
+        }
+        .part2  {
+            width: 50vw;
+            height: 13vh;
+            position: absolute;
+            right: 120vw;
+            top: 127vh;
+            background-color: white;
+            border-radius: 1rem;
+        }
+        .part2 p {
+            float: right;
+            padding: 0.5rem;
+            padding-right: 2rem;
+            font-size: 1.3rem;
+        }
+        #scroll1-binnen {
+            width: 800vw;
+            height: 50vh;
+            background-color: #99b6c6;
+            position: absolute;
+            left: 0vw;
+            top: 72vh;
+        }
+        #pijl1   {
+            position: absolute;
+            top: 92vh;
+            right: 1rem;
+            width: 2rem;
+            height: 2rem;
+            background-image: url(right.png);
+            background-size: contain;
+        }
+        #pijl2   {
+            position: absolute;
+            top: 92vh;
+            left: 1rem;
+            width: 2rem;
+            height: 2rem;
+            background-image: url(left.png);
+            background-size: contain;
+        }
+         .first {
+            width: 19rem;
+            height: 17.5rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+            margin-right: 2.5rem;
+            margin-top: 0.7rem;
+        }
+        .first:nth-child(1) {
+            background-image: url(001.jpg);
+            margin-left: 2.5rem;
+        }
+        .first:nth-child(2) {
+            background-image: url(003.jpg);
+        }
+        .first:nth-child(3) {
+            background-image: url(004.jpg);
+        }
+        .first:nth-child(4) {
+            background-image: url(005.png);
+            background-position: top;
+        }
+        .first:nth-child(5) {
+            background-image: url(006.jpg);
+        }
+        .first:nth-child(6) {
+            background-image: url(007.jpg);
+        }
+        .first:nth-child(7) {
+            background-image: url(008.jpg);
+        }
+        .first:nth-child(8) {
+            background-image: url(009.png);
+        }
+        .first:nth-child(9) {
+            background-image: url(010.jpg);
+        }
+
+        #scroll2-binnen {
+            width: 700vw;
+            height: 48vh;
+            background-color: #99b6c6;
+            position: absolute;
+            left: 0vw;
+            top: 145vh;
+            margin-bottom: 4rem;
+        }
+        #pijl3   {
+            position: absolute;
+            top: 167vh;
+            left: 1rem;
+            width: 2rem;
+            height: 2rem;
+            background-image: url(left.png);
+            background-size: contain;
+        }
+        #pijl4   {
+            position: absolute;
+            top: 167vh;
+            right: 1rem;
+            width: 2rem;
+            height: 2rem;
+            background-image: url(right.png);
+            background-size: contain;
+        }
+        .second {
+           width: 30rem;
+           height: 17rem;
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-position: center;
+           display: inline-block;
+           margin-right: 3rem;
+           margin-top: 0.7rem;
+        }
+        #twee_1 {
+           background-image: url(web1.PNG);
+           margin-left: 2.5rem;
+        }
+        #twee_2 {
+           background-image: url(web_2.PNG);
+        }
+        #twee_3 {
+           background-image: url(web3.PNG);
+        }
+        #twee_4 {
+           background-image: url(web_4.PNG);
+
+        }
+        .infoMe h2  {
+            position: absolute;
+            top: -1rem;
+            left: 5rem;
+            width: 10rem;
+            height: 7rem;
+            padding-top: 1rem;
+            padding-left: 1rem;
+            background-color: rgb(109, 217, 242, 0.5);
+            animation: h2move 12s infinite forwards;
+            z-index: 5;
+            mix-blend-mode: difference;
+
+        }
+        @keyframes h2move {
+            0%{
+                transform: translate(1rem, 0rem);
+            }
+            25%{
+                transform: translate(0rem, -0.5rem);
+            }
+            50%{
+                transform: translate(1rem, -1rem);
+            }
+            75%{
+                transform: translate(0.3rem, -0.5rem);
+            }
+            85%{
+                transform: translate(0rem, 0.5rem);
+            }
+            100%{
+                transform: translate(1rem, 0rem);
+            }
+        }
+
+        #p1 {
+            position: absolute;
+            top: 3rem;
+            left: 13rem;
+            width: 30rem;
+            height: 15rem;
+            padding: 1rem;
+            padding-top: 1rem;
+            padding-left: 1rem;
+            background-color: rgb(249, 109, 170, 0.5);
+            animation: p1move 9s infinite forwards;
+            mix-blend-mode: color-burn;
+            z-index: 13;
+        }
+        @keyframes p1move {
+            0%{
+                transform: translate(-2rem, 0rem);
+            }
+            25%{
+                transform: translate(3rem, -1.5rem);
+            }
+            50%{
+                transform: translate(6rem, -1rem);
+            }
+            75%{
+                transform: translate(0.3rem, 0rem);
+            }
+            85%{
+                transform: translate(0.3rem, 0.5rem);
+            }
+            100%{
+                transform: translate(-2rem, 0rem);
+            }
+        }
+        #p2 {
+            position: absolute;
+            top: 6rem;
+            left: 50rem;
+            width: 6rem;
+            height: 15rem;
+            padding: 1rem;
+            padding-top: 1rem;
+            padding-left: 1rem;
+            background-color: rgb(244, 212, 66, 0.5);
+            animation: p2move 10s infinite forwards;
+            mix-blend-mode: color;
+            z-index: 7;
+
+        }
+        @keyframes p2move {
+            0%{
+                transform: translate(0rem, -0.5rem);
+            }
+            50%{
+                transform: translate(1rem, -0.7rem);
+            }
+            75%{
+                transform: translate(1.3rem, 1rem);
+            }
+            100%{
+                transform: translate(0rem, -0.5rem);
+            }
+        }
+        .vierkant1  {
+            width: 18vw;
+            height: 28vh;
+            background-color: rgb(155, 198, 242, 0.7);
+            position: absolute;
+            top: 10rem;
+            left: 7rem;
+            z-index: 5;
+            animation: vier1 15s infinite forwards;
+            mix-blend-mode: color-dodge;
+        }
+        @keyframes vier1 {
+            0%{
+                transform: translate(0rem, -1rem);
+            }
+            50%{
+                transform: translate(30rem, 3rem);
+            }
+            75%{
+                transform: translate(5rem, 1rem);
+            }
+            100%{
+                transform: translate(0rem, -1rem);
+            }
+        }
+
+        .vierkant2  {
+            width: 30vw;
+            height: 10vh;
+            background-color: rgb(237, 139, 188, 0.7);
+            position: absolute;
+            top: 20rem;
+            left: 37rem;
+            z-index: 10;
+            mix-blend-mode: color-burn;
+            animation: vier2 10s infinite forwards;
+            mix-blend-mode: color-burn;
+
+        }
+        @keyframes vier2 {
+            0%{
+                transform: translate(5rem, 0rem);
+            }
+            50%{
+                transform: translate(3rem, -10rem);
+            }
+            75%{
+                transform: translate(5rem, -7rem);
+            }
+            100%{
+                transform: translate(5rem, 0rem);
+            }
+        }
+        .vierkant3  {
+            width: 13vw;
+            height: 20vh;
+            background-color:  rgb(249, 109, 170, 0.5);
+            position: absolute;
+            top: 6rem;
+            left: 55rem;
+            z-index: 12;
+            mix-blend-mode: color-dodge;
+            animation: vier3 7s infinite forwards;
+        }
+        @keyframes vier3 {
+            0%{
+                transform: translate(4rem, -2rem);
+            }
+            50%{
+                transform: translate(1rem, 6rem);
+            }
+            75%{
+                transform: translate(5rem, 3rem);
+            }
+            100%{
+                transform: translate(4rem, -2rem);
+            }
+        }
+    }
+}
